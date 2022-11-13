@@ -1,0 +1,37 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+
+
+input.yellow-input {
+    border-bottom: 1px solid #fff!important;
+    box-shadow: 0 1px 0 0 #fff!important;
+}
+
+input.yellow-input + label {
+    color: #ffffff!important;
+}
+
+input.yellow-input:focus {
+    border-bottom: 1px solid #ffeb3b!important;
+    box-shadow: 0 1px 0 0 #fff!important;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.app-info {
+    border-left: 2px solid grey;
+}
+
+.active-app {
+    background: tomato;
+}
+
+body {
+    overflow: hidden; /* Скрываем scrollbars */
+}

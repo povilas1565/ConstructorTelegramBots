@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col s6 offset-s3">
+            <div class="card blue darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Регистрация</span>
+                    <form method="post" action="/api/registration">
+                        <div>
+                            <div class="input-field">
+                                <input
+                                        placeholder="Введите имя"
+                                        id="name"
+                                        type="text"
+                                        name="name"
+                                        class="yellow-input"
+                                        onChange={changeHandler}
+                                />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-field">
+                                <input
+                                        placeholder="Введите логин"
+                                        id="username"
+                                        type="text"
+                                        name="username"
+                                        class="yellow-input"
+                                        onChange={changeHandler}
+                                />
+                                <label>Login</label>
+                            </div>
+
+                            <div class="input-field">
+                                <input
+                                        placeholder="Введите пароль"
+                                        id="password"
+                                        type="password"
+                                        name="password"
+                                        class="yellow-input"
+                                        onChange={changeHandler}
+                                />
+                                <label>Password</label>
+                            </div>
+
+                        </div>
+                        <div class="card-action">
+                            <button class="btn yellow darken-4" type='submit'>Register</button>
+                            <a href="login.html">Авторизация</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
